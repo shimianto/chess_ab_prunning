@@ -27,6 +27,19 @@ The modeled game is a simplified version of a game of chess. In a traditional ga
 
 ![pos_ini](doc/imgs/pos_ini.png)
 
+In addition to the board size and number of pieces, some rules present in a traditional chess game were disregarded to ensure the simplicity of the model:
+
+* Firstly, in a classic chess game, a player cannot make a move that puts the king himself in check, or that leaves his king in check. This rule has been disregarded and such moves are absolutely valid in the modified version;
+
+* As a consequence of the previous modification, another modification was necessary: ​​under the rules of classical chess, a game ends when a player is in a check position and there are no possible valid moves for it. As positions that leave the king in check are valid in the modified version, in this case the game ends when a player captures the opposing king;
+
+* To prevent the game from going on forever, a tie condition has been established: if the game is in a state where both players have only the king's pieces, the game will end after three moves and, if no player captures the opponent king at this time, the game ends in a draw;
+
+* Finally, each piece has the same moves available in a classic chess game: rook moves horizontally, bishop diagonally and king can move a single square in any direction and no piece can end in a square where a piece of the same color is positioned. However, for the sake of simplicity, a small change to traditional rules was made. While in the game of chess only the horse can "jump" spaces between its home and destination squares that are occupied, this ability has been replicated for all pieces in this new version of the game (as the king can move only one square in a given direction, this rule is irrelevant to it). The figure bellow shows an example of this rule:
+
+![skip_mov](doc/imgs/skip_mov.png)
+
+
 ## References
 <a id="mas">[1]</a> 
 Yoav Shoham, Kevin Leyton Brown. 
