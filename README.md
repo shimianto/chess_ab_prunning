@@ -103,6 +103,14 @@ The figures below show the result of a game when both players follow the moves s
 ![move_18](doc/imgs/move_18.png)
 ![move_19](doc/imgs/move_19.png)
 
+## Conclusion
+
+Even though the white pieces have the initiative due to the fact of making the initial move, when both players play the  "best" move, the result is always a tie. Due to the simplicity of the game, an experienced human player can tie with the implemented algorithm, but it will hardly come out victorious, even when the algorithm can visualize only 6 future steps. In a more complex game, like classic chess, and with more powerful algorithms and capable of visualizing dozens of future steps, a human player will hardly be able to achieve results that would come close to a computer's.
+
+An interesting point to note is that the *Alpha-Beta Pruning* algorithm achieved an average execution time of around 15 seconds for each evaluation. This value was reduced considerably as the game approached its end, due to the reduction in the number of pieces on the board and, consequently, possible future states. On the other hand, the traditional *Backpropagation* algorithm, obtained much worse results, taking several minutes to find the same result that the *Alpha-Beta Pruning* obtained in seconds. This shows the great optimization and computational advantage that *Alpha-Beta Pruning* offers over the original *Backpropagation* algorithm.
+
+Finally, we can conclude that several real-world situations can be modeled in the form of a game in the extensive form. The *Backpropagation* algorithm is able to find the best solution for any game modeled in this way in exponential time. The *Alpha-Beta Pruning* algorithm is composed of a modified version of the *Backpropagation* and manages to obtain the same optimal result in a much shorter average time. Despite its great results, even the *Alpha-Beta Pruning* algorithm has difficulty finding the optimal result in a timely manner from a sufficiently complex game, such as chess. In these cases, a heuristic is applied to the search algorithm. With a sufficiently well-developed heuristic, the algorithm is able to visualize only a limited number of future moves, but it manages to estimate the best possible move given the *payoffs* of the most distant states viewed.
+
 
 
 ## References
