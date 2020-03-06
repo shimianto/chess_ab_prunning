@@ -66,14 +66,41 @@ To solve this problem, the algorithm used applies the search to a reasonably low
 The applied heuristic is as follows:
 
 * Each piece of the game is assigned a value, with positive values for white pieces, and equivalent negative values for black pieces;
-* In each state of the game, the \ textit {payoff} is calculated according to the sum of the values of the pieces still present on the board;
-* The values defined for each part are:
+* In each state of the game, the *payoff* is calculated according to the sum of the values of the pieces still present on the board;
+* The values defined for each piece are:
 
 	+ **Bishop**: <img src = "https://render.githubusercontent.com/render/math?math=\pm\ 3">
 	+ **Tower**: <img src = "https://render.githubusercontent.com/render/math?math=\pm\ 5">
 	+ **King**: <img src = "https://render.githubusercontent.com/render/math?math=\pm\ 10000">
 
 The implemented algorithm therefore applies the heuristic described to the *Alpha-Beta Pruning* algorithm. With this, it is able to view only a limited number of future moves, but it is able to estimate the best possible move given the *payoffs* of the most distant states viewed.
+
+## Results
+
+The game and the learning algorithm were implemented in Python. The final product consists of a simple game, which allows a human player to play against the computer. The human player plays with the white pieces, and has access to a move suggestion that corresponds to the best move found by the algorithm. That player can follow the algorithm's suggestion or not. The computer, which plays with the black pieces, will always follow the best solution found by the algorithm.
+
+The figures below show the result of a game when both players follow the moves suggested by the algorithm, which can analyze up to 6 future moves.
+
+![pos_ini](doc/imgs/pos_ini.png)
+![move_1](doc/imgs/move_1.png)
+![move_2](doc/imgs/move_2.png)
+![move_3](doc/imgs/move_3.png)
+![move_4](doc/imgs/move_4.png)
+![move_5](doc/imgs/move_5.png)
+![move_6](doc/imgs/move_6.png)
+![move_7](doc/imgs/move_7.png)
+![move_8](doc/imgs/move_8.png)
+![move_9](doc/imgs/move_9.png)
+![move_10](doc/imgs/move_10.png)
+![move_11](doc/imgs/move_11.png)
+![move_12](doc/imgs/move_12.png)
+![move_13](doc/imgs/move_13.png)
+![move_14](doc/imgs/move_14.png)
+![move_15](doc/imgs/move_15.png)
+![move_16](doc/imgs/move_16.png)
+![move_17](doc/imgs/move_17.png)
+![move_18](doc/imgs/move_18.png)
+![move_19](doc/imgs/move_19.png)
 
 
 
