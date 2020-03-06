@@ -39,6 +39,17 @@ In addition to the board size and number of pieces, some rules present in a trad
 
 ![skip_mov](doc/imgs/skip_mov.png)
 
+While in a traditional game the movement shown in the figure was not valid due to the existence of pieces between the start and end position of the tower, in the modified version this movement is allowed.
+
+## Modeling in extensive form
+
+As mentioned earlier, the proposed game will be modeled as a zero-sum game of perfect information in extensive form. Game rules in the extensive form are defined by legal positions (or legal states) and legal moves for all legal positions. For each legal position, it is possible to effectively determine all legal movements. Some legal positions are starting positions and others are ending.
+
+The best way to describe these terms is to use a tree chart whose nodes are legal positions and whose borders are legal movements. The graph is directed, as it does not necessarily mean that we will be able to go back exactly where we came from in the previous move. For example, in classical chess, a pawn can only advance. This graph is called a game tree. Moving down the game tree represents one of the players making a move, and the state of the game changes from one legal position to another.
+
+![mod_chess_ext_form](doc/imgs/mod_chess_ext_form.png)
+
+
 
 ## References
 <a id="mas">[1]</a> 
