@@ -82,6 +82,7 @@ The game and the learning algorithm were implemented in Python. The final produc
 The figures below show the result of a game when both players follow the moves suggested by the algorithm, which can analyze up to 6 future moves.
 
 ![pos_ini](doc/imgs/pos_ini.png)
+
 ![move_1](doc/imgs/move_1.png)
 ![move_2](doc/imgs/move_2.png)
 ![move_3](doc/imgs/move_3.png)
