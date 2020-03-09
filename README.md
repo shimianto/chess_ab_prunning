@@ -118,3 +118,7 @@ Finally, we can conclude that several real-world situations can be modeled in th
 Yoav Shoham, Kevin Leyton Brown. 
 Multi Agent Systems, 
 Algorithmic, Game-Theoretic, and Logical Foundations. 2010.
+
+## Authors
+
+* **Arthur de Senna Rocha** - [asrocha95](https://github.com/asrocha95)
